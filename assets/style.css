@@ -1,0 +1,55 @@
+.mod_digi-faq_container {
+    /* Stili per il contenitore principale del modulo */
+}
+
+.digi-faq-list {
+    /* Stili per la lista di FAQ */
+}
+
+.digi-faq-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.digi-faq-item[open] .digi-faq-question { /* Stili per la domanda quando la risposta è visibile */
+    border-bottom: 1px solid #eee;
+    background-color: #f9f9f9;
+}
+
+.digi-faq-question {
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block; /* Per rendere l'intera area cliccabile */
+    position: relative; /* Per l'eventuale freccia */
+	opacity: 1;
+	transition: opacity .4s;
+}
+
+.digi-faq-question:hover {
+	opacity: .5;
+}
+
+/* Aggiungi una freccia (opzionale) */
+.digi-faq-question::after {
+    content: '\25BC'; /* Freccia verso il basso */
+    position: absolute;
+    right: 15px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.digi-faq-item[open] .digi-faq-question::after {
+    transform: rotate(180deg); /* Freccia verso l'alto quando aperto */
+}
+
+.digi-faq-answer {
+    padding: 15px;
+    background-color: #fcfcfc;
+    border-top: 1px solid #eee; /* Separatore se summary non ha un bordo inferiore quando aperto */
+}
+
+/* Stili per il suffisso classe modulo */
+.digi--faq-custom-stile .digi-faq-item {
+    border-color: blue;
+}

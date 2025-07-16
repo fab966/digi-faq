@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" client="site" method="upgrade">
+    <name>Digi FAQ</name>
+    <author>Digitest.net</author>
+    <creationDate>May 2025</creationDate>
+    <copyright>Copyright (C) 2025 Digitest.net. Tutti i diritti riservati.</copyright>
+    <license>GNU General Public License versione 2 o successiva; vedere LICENSE.txt</license>
+    <authorEmail>public2@digitest.net</authorEmail>
+    <authorUrl>www.digitest.net</authorUrl>
+    <version>3.0.2</version>
+    <description><![CDATA[MOD_DIGI_FAQ_DESCRIPTION]]></description>
+    <namespace path="src/">Joomla\Module\DigiFaq</namespace>
+    <files>
+        <filename module="mod_digi_faq">mod_digi_faq.php</filename>
+        <filename>mod_digi_faq.xml</filename>
+        <filename>index.html</filename>
+        <folder>assets</folder>
+        <folder>language</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/mod_digi_faq.ini</language>
+		<language tag="it-IT">language/it-IT/mod_digi_faq.ini</language>
+	</languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                 <field
+                 	name="subtitle"
+                    type="text"
+                    label="MOD_DIGI_FAQ_SUBTITLE"
+                    description="MOD_DIGI_FAQ_SUBTITLE_DESC"
+                    size="20"
+                    filter="string"
+                />
+                <field type="spacer" name="divider1" hr="true" />
+                <field
+                    name="faq_items"
+                    type="subform"
+                    label="MOD_DIGI_FAQ_ELEMENTS"
+                    description="MOD_DIGI_FAQ_ELEMENTS_DESC"
+                    multiple="true"
+                    layout="joomla.form.field.subform.repeatable-table"
+                    min="3" max="12" groupByFieldset="false"
+                    >
+                    <form>
+                        <field
+                            name="question"
+                            type="text"
+                            label="MOD_DIGI_FAQ_QUESTION"
+                            required="true"
+                            size="20"
+                            filter="string"
+                        />
+                        <field
+                            name="answer_long"
+                            type="textarea"
+                            label="MOD_DIGI_FAQ_ANSWER_LONG"
+                            required="true"
+                            rows="3"
+                            cols="25"
+                            filter="safehtml"
+                        />
+                        <field
+                            name="answer_short"
+                            type="textarea"
+                            label="MOD_DIGI_FAQ_ANSWER_SHORT"
+                            required="true"
+                            rows="3"
+                            cols="25"
+                            filter="safehtml"
+                        />
+                        <field
+                            name="ordering"
+                            type="hidden"
+                        />
+                    </form>
+                </field>
+            </fieldset>
+            <fieldset name="customise" label="MOD_DIGI_FAQ_TAB_CUSTOMISE">
+            	<field
+            		name="questionColor"
+            		type="color"
+            		default="#444" 
+            		format="rgba"
+            		label="MOD_DIGI_FAQ_QUESTION_LABEL"
+            		description="MOD_DIGI_FAQ_QUESTION_DESC"
+				/>
+           	
+            	<field
+            		name="questionFontSize"
+            		type="text"
+            		default="1rem"
+            		label="MOD_DIGI_FAQ_QUESTION_FONTSIZE_LABEL"
+            		description="MOD_DIGI_FAQ_QUESTION_FONTSIZE_DESC"
+				/>
+				
+				<field type="spacer" name="dividercss" hr="true" />
+				
+				<field
+ 					name="useintcss"
+ 					type="radio"
+ 					default="1"
+ 					class="btn-group btn-group-yesno"
+ 					label="MOD_DIGI_FAQ_USE_INTERNAL_CSS"
+ 					description="MOD_DIGI_FAQ_USE_INTERNAL_CSS_DESC">
+  					<option value="0">JNO</option>
+  					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+            <fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+					default=""
+					rows="3"
+				/>
+
+				<field
+					name="owncache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+					default="1"
+					filter="integer"
+					>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="number"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+					default="900"
+					filter="integer"
+				/>
+			</fieldset>
+        </fields>
+    </config>
+    <updateservers>
+		<server type="extension" name="Digi FAQ" priority="1">https://www.digitest.net/sw/updates/mod_digi_faq.xml</server>
+	</updateservers>
+</extension>
