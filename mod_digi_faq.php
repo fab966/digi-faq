@@ -1,19 +1,17 @@
 <?php
 defined('_JEXEC') or die;
 
-// Per Joomla 4/5 con namespace
-use Joomla\Module\DigiFaq\Site\Helper\FaqHelper; // Adatta il namespace se necessario
+use Joomla\Module\DigiFaq\Site\Helper\FaqHelper;
 use Joomla\CMS\Factory;
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Helper\ModuleHelper;
-use Joomla\CMS\Uri\Uri; // Per il percorso del CSS
+use Joomla\CMS\Uri\Uri;
 
-// Se usi la vecchia struttura helper.php
+// Old helper.php
 // require_once dirname(__FILE__) . '/helper.php';
 
-// Carica il file CSS del modulo
+// Get CSS file
 $document = Factory::getApplication()->getDocument();
-// Il percorso URI al file CSS
 $cssFile = Uri::base(true) . '/modules/mod_digi_faq/assets/style.css';
 
 // Get Params
@@ -31,18 +29,18 @@ $customStyle = '.digi-faq-question{color:'.$questionColor.';font-size:'.$questio
 $document->addStyleDeclaration($customStyle);
 
 
-// Recupera gli item FAQ
-$faqItems = FaqHelper::getFaqItems($params); // $params è automaticamente disponibile qui
+// Get FAQ Items
+$faqItems = FaqHelper::getFaqItems($params);
 
-// Aggiungi lo schema JSON-LD alla head
+// Add JSON-LD to the Head
 if (!empty($faqItems)) {
     FaqHelper::addFaqSchema($faqItems);
 }
 
-// Controlla se ci sono item prima di includere il layout
+// Check if there are Items
 if (empty($faqItems)) {
-    return; // Non mostrare nulla se non ci sono FAQ
+    return;
 }
 
-// Recupera il layout del modulo
+// Module Layout
 require ModuleHelper::getLayoutPath('mod_digi_faq', $params->get('layout', 'default'));

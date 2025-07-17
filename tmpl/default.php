@@ -1,17 +1,14 @@
 <?php
 defined('_JEXEC') or die;
 
-
 use Joomla\CMS\Language\Text;
 
-// Classe CSS principale per il modulo (puoi anche usare $module->id per un ID univoco)
+// Main CSS Class for the Module - [ToDo: use Mod ID to have different Instances Style )
 $containerClass = 'mod_digifaq_container ' . $moduleClassSfx;
 ?>
 <div class="<?php echo trim($containerClass); ?>">
    
 	<?php echo $subtitle ? '<h4>'.$subtitle.'</h4>' : ''; ?>
-   
-   
    
     <?php if (!empty($faqItems)) : ?>
         <div class="faq-list">
@@ -22,7 +19,7 @@ $containerClass = 'mod_digifaq_container ' . $moduleClassSfx;
                             <?php echo htmlspecialchars($item->question); ?>
                         </summary>
                         <div class="digi-faq-answer">
-                            <?php echo $item->answer_long; // JHtml::_('content.prepare', $item->answer) se vuoi processare i plugin di contenuto ?>
+                            <?php echo $item->answer_long; // JHtml::_('content.prepare', $item->answer) if you want to process content plugins ?>
                         </div>
                     </details>
                 <?php endif; ?>
@@ -31,4 +28,5 @@ $containerClass = 'mod_digifaq_container ' . $moduleClassSfx;
     <?php else : ?>
         <p>Nessuna domanda trovata</p>
     <?php endif; ?>
+    
 </div>
