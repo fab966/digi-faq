@@ -1,6 +1,6 @@
 # Joomla 5 FAQ Module
 
-A flexible and SEO-friendly FAQ module for Joomla 5.  
+A flexible and SEO-friendly FAQ module for Joomla 5 by Fabrizio Galuppi.  
 Easily manage, display, and optimize frequently asked questions on your site, supporting both extensive user-facing answers and concise structured data for search engines.
 
 ## Features
