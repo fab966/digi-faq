@@ -19,13 +19,22 @@ $subtitle 			= $params->get('subtitle', '');
 $useIntCSS 			= $params->get('useintcss', '1');
 $questionColor 		= $params->get('questionColor', '#444'); 
 $questionFontSize 	= $params->get('questionFontSize', '1rem');
+$borderColor 		= $params->get('borderColor', '#444');
+$questionBKG 		= $params->get('questionBKG', '#eee');
+$questionBKGopen 	= $params->get('questionBKGopen', '#eee');
+$answerBKG 			= $params->get('answerBKG', '#fff');
+
 
 // Add CSS if requested by Module Parameter
 $cssFile = Uri::base(true) . '/modules/mod_digi_faq/assets/style.css';
 if($useIntCSS){$document->addStyleSheet($cssFile);};
 
 // Customise
-$customStyle = '.digi-faq-question{color:'.$questionColor.';font-size:'.$questionFontSize.';}';
+$customStyle = 	'.digi-faq-question{color:' . $questionColor . ';font-size:' . $questionFontSize . ';background-color:' . $questionBKG . ';}';
+$customStyle .= '.digi-faq-item{border: 1px solid ' . $borderColor . ';}';
+$customStyle .= '.digi-faq-answer{background-color:' . $answerBKG  . ';}';
+$customStyle .= '.digi-faq-item[open] .digi-faq-question {background-color:' . $questionBKGopen . ';}';
+
 $document->addStyleDeclaration($customStyle);
 
 
