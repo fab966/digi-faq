@@ -79,6 +79,7 @@
                 </field>
             </fieldset>
             <fieldset name="customise" label="MOD_DIGI_FAQ_TAB_CUSTOMISE">
+            
             	<field
             		name="questionColor"
             		type="color"
@@ -97,12 +98,39 @@
 				/>
            	
             	<field
+            		name="questionBKG"
+            		type="color"
+            		default="#eee" 
+            		format="rgba"
+            		label="MOD_DIGI_FAQ_BKG_QUESTION_LABEL"
+            		description="MOD_DIGI_FAQ_BKG_QUESTION_DESC"
+				/>
+           	
+            	<field
+            		name="questionBKGopen"
+            		type="color"
+            		default="#eee" 
+            		format="rgba"
+            		label="MOD_DIGI_FAQ_BKG_QUESTION_OPEN_LABEL"
+            		description="MOD_DIGI_FAQ_BKG_QUESTION_OPEN_DESC"
+				/>
+           	
+            	<field
             		name="borderColor"
             		type="color"
             		default="#444" 
             		format="rgba"
             		label="MOD_DIGI_FAQ_BORDERCOLOR_LABEL"
             		description="MOD_DIGI_FAQ_BORDERCOLOR_DESC"
+				/>
+           	
+            	<field
+            		name="answerBKG"
+            		type="color"
+            		default="#fff" 
+            		format="rgba"
+            		label="MOD_DIGI_FAQ_BKG_ANSWER_LABEL"
+            		description="MOD_DIGI_FAQ_BKG_ANSWER_DESC"
 				/>
 				
 				<field type="spacer" name="dividercss" hr="true" />
