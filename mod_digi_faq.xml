@@ -7,7 +7,7 @@
     <license>GNU General Public License version 2 or newers.</license>
     <authorEmail>public2@digitest.net</authorEmail>
     <authorUrl>www.digitest.net</authorUrl>
-    <version>3.0.4</version>
+    <version>3.0.5</version>
     <description><![CDATA[MOD_DIGI_FAQ_DESCRIPTION]]></description>
     <namespace path="src/">Joomla\Module\DigiFaq</namespace>
     <files>
@@ -94,6 +94,15 @@
             		default="1rem"
             		label="MOD_DIGI_FAQ_QUESTION_FONTSIZE_LABEL"
             		description="MOD_DIGI_FAQ_QUESTION_FONTSIZE_DESC"
+				/>
+           	
+            	<field
+            		name="borderColor"
+            		type="color"
+            		default="#444" 
+            		format="rgba"
+            		label="MOD_DIGI_FAQ_BORDERCOLOR_LABEL"
+            		description="MOD_DIGI_FAQ_BORDERCOLOR_DESC"
 				/>
 				
 				<field type="spacer" name="dividercss" hr="true" />
