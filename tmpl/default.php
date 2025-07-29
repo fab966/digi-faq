@@ -9,7 +9,7 @@ $containerClass = 'mod_digifaq_container ' . $moduleClassSfx;
 <div class="<?php echo trim($containerClass); ?>">
    
 	<?php echo $subtitle ? '<h4>'.$subtitle.'</h4>' : ''; ?>
-   
+
     <?php if (!empty($faqItems)) : ?>
         <div class="faq-list">
             <?php foreach ($faqItems as $index => $item) : ?>
@@ -28,5 +28,4 @@ $containerClass = 'mod_digifaq_container ' . $moduleClassSfx;
     <?php else : ?>
         <p>Nessuna domanda trovata</p>
     <?php endif; ?>
-    
 </div>
