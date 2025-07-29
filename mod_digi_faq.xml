@@ -7,7 +7,7 @@
     <license>GNU General Public License version 2 or newers.</license>
     <authorEmail>public2@digitest.net</authorEmail>
     <authorUrl>www.digitest.net</authorUrl>
-    <version>3.0.5</version>
+    <version>3.0.6</version>
     <description><![CDATA[MOD_DIGI_FAQ_DESCRIPTION]]></description>
     <namespace path="src/">Joomla\Module\DigiFaq</namespace>
     <files>
