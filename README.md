@@ -16,7 +16,7 @@ Easily manage, display, and optimize frequently asked questions on your site, su
 - **Drag & Drop Ordering**  
   Easily reorder questions in the admin UI with drag-and-drop.
 - **SEO Optimized**  
-  Outputs valid [JSON-LD FAQPage schema](https://schema.org/FAQPage) embedded in the page `` for rich search results.
+  Outputs valid [JSON-LD FAQPage schema](https://schema.org/FAQPage) embedded in the page for rich search results.
 - **Modern Output**  
   Utilizes semantic `/` HTML5 elements for accessibility and a clean user experience.
 - **Customizable Styling**  
@@ -39,7 +39,7 @@ Easily manage, display, and optimize frequently asked questions on your site, su
   - Use the plain text field for concise answers for schema markup.
 - Drag and drop to reorder questions.
 - Adjust styling by modifying CSS classes if desired.
-- The module will automatically inject valid FAQPage JSON-LD schema into the page`s ``.
+- The module will automatically inject valid FAQPage JSON-LD schema into the page.
 
 ## Output Examples
 
