@@ -1,6 +1,7 @@
 # Joomla 5 FAQ Module
 ![Joomla 5 Supported](https://img.shields.io/badge/Joomla-5.x-%234F9F4A?logo=joomla)
 ![GPL License](https://img.shields.io/badge/license-GPL%20v2%2B-blue)
+![PHP 8+](https://img.shields.io/badge/PHP-8%2B-purple?logo=php)
 
 A flexible and SEO-friendly FAQ module for Joomla 5 by Fabrizio Galuppi - Digitest.  
 Easily manage, display, and optimize frequently asked questions on your site, supporting both extensive user-facing answers and concise structured data for search engines.
@@ -16,7 +17,7 @@ Easily manage, display, and optimize frequently asked questions on your site, su
 - **Drag & Drop Ordering**  
   Easily reorder questions in the admin UI with drag-and-drop.
 - **SEO Optimized**  
-  Outputs valid [JSON-LD FAQPage schema](https://schema.org/FAQPage) embedded in the page `` for rich search results.
+  Outputs valid [JSON-LD FAQPage schema](https://schema.org/FAQPage) embedded in the page for rich search results.
 - **Modern Output**  
   Utilizes semantic `/` HTML5 elements for accessibility and a clean user experience.
 - **Customizable Styling**  
@@ -39,7 +40,7 @@ Easily manage, display, and optimize frequently asked questions on your site, su
   - Use the plain text field for concise answers for schema markup.
 - Drag and drop to reorder questions.
 - Adjust styling by modifying CSS classes if desired.
-- The module will automatically inject valid FAQPage JSON-LD schema into the page`s ``.
+- The module will automatically inject valid FAQPage JSON-LD schema into the page.
 
 ## Output Examples
 
