@@ -2,7 +2,7 @@
 <extension type="module" version="4.0" client="site" method="upgrade">
     <name>Digi FAQ</name>
     <author>Digitest.net</author>
-    <creationDate>May 2025</creationDate>
+    <creationDate>September 2025</creationDate>
     <copyright>Copyright (C) 2025 Digitest.net. All Right reserved.</copyright>
     <license>GNU General Public License version 2 or newers.</license>
     <authorEmail>public2@digitest.net</authorEmail>
@@ -132,6 +132,19 @@
             		label="MOD_DIGI_FAQ_BKG_ANSWER_LABEL"
             		description="MOD_DIGI_FAQ_BKG_ANSWER_DESC"
 				/>
+				
+				<field type="spacer" name="dividerexcl" hr="true" />
+				
+				<field
+ 					name="exclusive"
+ 					type="radio"
+ 					default="0"
+ 					class="btn-group btn-group-yesno"
+ 					label="MOD_DIGI_FAQ_EXCLUSIVE"
+ 					description="MOD_DIGI_FAQ_USE_EXCLUSIVE_DESC">
+  					<option value="0">JNO</option>
+  					<option value="1">JYES</option>
+				</field>
 				
 				<field type="spacer" name="dividercss" hr="true" />
 				

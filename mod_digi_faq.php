@@ -23,6 +23,7 @@ $borderColor 		= $params->get('borderColor', '#444');
 $questionBKG 		= $params->get('questionBKG', '#eee');
 $questionBKGopen 	= $params->get('questionBKGopen', '#eee');
 $answerBKG 			= $params->get('answerBKG', '#fff');
+$exclusive 			= $params->get('exclusive', '0');
 
 
 // Add CSS if requested by Module Parameter
