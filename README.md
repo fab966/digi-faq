@@ -97,7 +97,7 @@ This project is released under the [GNU GPL v2 or later](https://www.gnu.org/lic
 
 ## Credits
 
-Developed & maintained by [Your Name / Team].  
+Developed & maintained by Digitest.  
 Inspired by open web standards and Joomla community best practices.
 
 ## Links
