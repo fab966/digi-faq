@@ -19,7 +19,6 @@
 
 .digi-faq-question {
     padding: 10px 15px;
-    font-weight: bold;
     cursor: pointer;
     display: block; /* Per rendere l'intera area cliccabile */
     position: relative; /* Per l'eventuale freccia */
