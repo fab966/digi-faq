@@ -1,9 +1,9 @@
-# Joomla 5 FAQ Module
-![Joomla 5 Supported](https://img.shields.io/badge/Joomla-5.x-%234F9F4A?logo=joomla)
+# Joomla 6 FAQ Module
+![Joomla 6 Supported](https://img.shields.io/badge/Joomla-6.x-%234F9F4A?logo=joomla)
 ![GPL License](https://img.shields.io/badge/license-GPL%20v2%2B-blue)
 ![PHP 8+](https://img.shields.io/badge/PHP-8%2B-purple?logo=php)
 
-A flexible and SEO-friendly FAQ module for Joomla 5 by Fabrizio Galuppi - Digitest.  
+A flexible and SEO-friendly FAQ module for Joomla 6 by Fabrizio Galuppi - Digitest.  
 Easily manage, display, and optimize frequently asked questions on your site, supporting both extensive user-facing answers and concise structured data for search engines.
 
 ## Features
