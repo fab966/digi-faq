@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="4.0" client="site" method="upgrade">
-    <name>Digi FAQ</name>
+<extension type="module" version="6.0" client="site" method="upgrade">
+    <name>mod_digi_faq</name>
     <author>Digitest.net</author>
-    <creationDate>September 2025</creationDate>
-    <copyright>Copyright (C) 2025 Digitest.net. All Right reserved.</copyright>
+    <creationDate>Mar 2026</creationDate>
+    <copyright>Copyright (C) 2026-2030 Digitest.net. All Right reserved.</copyright>
     <license>GNU General Public License version 2 or newers.</license>
     <authorEmail>public2@digitest.net</authorEmail>
     <authorUrl>www.digitest.net</authorUrl>
-    <version>3.0.7</version>
+    <version>4.0.2</version>
     <description><![CDATA[MOD_DIGI_FAQ_DESCRIPTION]]></description>
-    <namespace path="src/">Joomla\Module\DigiFaq</namespace>
+    <namespace path="src">Digitest\Module\DigiFaq</namespace>
     <files>
         <filename module="mod_digi_faq">mod_digi_faq.php</filename>
         <filename>mod_digi_faq.xml</filename>
-        <filename>index.html</filename>
         <folder>assets</folder>
         <folder>language</folder>
+        <folder>services</folder>
         <folder>src</folder>
         <folder>tmpl</folder>
 	</files>
@@ -95,6 +95,14 @@
             		default="1rem"
             		label="MOD_DIGI_FAQ_QUESTION_FONTSIZE_LABEL"
             		description="MOD_DIGI_FAQ_QUESTION_FONTSIZE_DESC"
+				/>
+           	
+            	<field
+            		name="questionFontWeight"
+            		type="text"
+            		default="400"
+            		label="MOD_DIGI_FAQ_QUESTION_FONTWEIGHT_LABEL"
+            		description="MOD_DIGI_FAQ_QUESTION_FONTWEIGHT_DESC"
 				/>
            	
             	<field
