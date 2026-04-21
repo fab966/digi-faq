@@ -2,6 +2,9 @@
 defined('_JEXEC') or die;
 
 use Joomla\CMS\Language\Text;
+use Joomla\CMS\Router\Route;
+
+if (!empty($menuId) && (int)$menuId > 0) {$link = Route::_('index.php?Itemid=' . $menuId);}
 
 // Main CSS Class for the Module - [ToDo: use Mod ID to have different Instances Style )
 $containerClass = 'mod_digifaq_container ' . $moduleClassSfx;
@@ -27,5 +30,10 @@ $containerClass = 'mod_digifaq_container ' . $moduleClassSfx;
         </div>
     <?php else : ?>
         <p>Nessuna domanda trovata</p>
-    <?php endif; ?>    
+    <?php endif; ?>
+    <?php if(!empty($menuId) && (int)$menuId > 0) : ?>
+    <div>
+    	<p class="readmore"><a href="<?php echo $link; ?>">Leggi tutte le FAQ</a></p> 	
+    </div>    
+    <?php endif; ?>
 </div>
