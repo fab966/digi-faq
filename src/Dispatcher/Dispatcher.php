@@ -6,8 +6,8 @@
  * @subpackage 	Modules
  * @license    	GNU/GPL, see LICENSE.php
  * @author		Fabrizio Galuppi - Digitest
- * @version		4.0.2
- * @date		Mar 2026
+ * @version		4.0.3
+ * @date		Apr 2026
  * @copyright   Copyright (C) 2026 - 2030 Fabrizio Galuppi - Digitest
  * @link       	https://www.digitest.net
  */
@@ -55,6 +55,7 @@ class Dispatcher extends AbstractModuleDispatcher implements HelperFactoryAwareI
         $data['faqItems']       = $faqItems;
         $data['subtitle']       = $params->get('subtitle', '');
         $data['exclusive']      = $params->get('exclusive', '0');
+		$data['menuId']			= $params->get('target_menu', '0');
         $data['moduleClassSfx'] = htmlspecialchars($params->get('moduleclass_sfx', ''));
 
         return $data;

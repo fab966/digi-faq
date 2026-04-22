@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="6.0" client="site" method="upgrade">
-    <name>mod_digi_faq</name>
+    <name>Digitest FAQ</name>
     <author>Digitest.net</author>
-    <creationDate>Mar 2026</creationDate>
+    <creationDate>Apr 2026</creationDate>
     <copyright>Copyright (C) 2026-2030 Digitest.net. All Right reserved.</copyright>
     <license>GNU General Public License version 2 or newers.</license>
     <authorEmail>public2@digitest.net</authorEmail>
     <authorUrl>www.digitest.net</authorUrl>
-    <version>4.0.2</version>
+    <version>4.0.3</version>
     <description><![CDATA[MOD_DIGI_FAQ_DESCRIPTION]]></description>
     <namespace path="src">Digitest\Module\DigiFaq</namespace>
     <files>
@@ -22,6 +22,8 @@
 	<languages>
 		<language tag="en-GB">language/en-GB/mod_digi_faq.ini</language>
 		<language tag="it-IT">language/it-IT/mod_digi_faq.ini</language>
+		<language tag="en-GB">language/en-GB/mod_digi_faq.sys.ini</language>
+		<language tag="it-IT">language/it-IT/mod_digi_faq.sys.ini</language>
 	</languages>
     <config>
         <fields name="params">
@@ -166,6 +168,18 @@
   					<option value="0">JNO</option>
   					<option value="1">JYES</option>
 				</field>
+				
+				<field type="spacer" name="dividerlink" hr="true" />
+				
+				<field 
+    				name="target_menu" 
+    				type="menuitem" 
+    				show_none="true"
+    				label="MOD_DIGI_FAQ_MENULINK_LABEL" 
+    				description="MOD_DIGI_FAQ_MENULINK_DESC">
+    				<option value="">JOPTION_SELECT_MENU_ITEM</option>
+				</field>
+				
 			</fieldset>
             <fieldset name="advanced">
 				<field
