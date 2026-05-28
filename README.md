@@ -9,7 +9,7 @@ Easily manage, display, and optimize frequently asked questions on your site, su
 ## Features
 
 - **FAQs**  
-  Configure between 3 and 12 FAQ entries.
+  Configure between 1 and 12 FAQ entries.
 - **Dual Answer Format**  
   For each question, provide:
   - A **public, extended answer** (rich HTML)
