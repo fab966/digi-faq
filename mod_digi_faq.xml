@@ -2,12 +2,12 @@
 <extension type="module" version="6.0" client="site" method="upgrade">
     <name>Digitest FAQ</name>
     <author>Digitest.net</author>
-    <creationDate>Apr 2026</creationDate>
+    <creationDate>Mag 2026</creationDate>
     <copyright>Copyright (C) 2026-2030 Digitest.net. All Right reserved.</copyright>
     <license>GNU General Public License version 2 or newers.</license>
     <authorEmail>public2@digitest.net</authorEmail>
     <authorUrl>www.digitest.net</authorUrl>
-    <version>4.0.3</version>
+    <version>4.0.4</version>
     <description><![CDATA[MOD_DIGI_FAQ_DESCRIPTION]]></description>
     <namespace path="src">Digitest\Module\DigiFaq</namespace>
     <files>
@@ -44,7 +44,7 @@
                     description="MOD_DIGI_FAQ_ELEMENTS_DESC"
                     multiple="true"
                     layout="joomla.form.field.subform.repeatable-table"
-                    min="3" max="12" groupByFieldset="false"
+                    min="1" max="12" groupByFieldset="false"
                     >
                     <form>
                         <field
@@ -178,6 +178,19 @@
     				label="MOD_DIGI_FAQ_MENULINK_LABEL" 
     				description="MOD_DIGI_FAQ_MENULINK_DESC">
     				<option value="">JOPTION_SELECT_MENU_ITEM</option>
+				</field>
+				
+				<field type="spacer" name="dividerreveal" hr="true" />
+				
+				<field
+ 					name="useReveal"
+ 					type="radio"
+ 					default="1"
+ 					class="btn-group btn-group-yesno"
+ 					label="MOD_DIGI_FAQ_USE_REVEAL"
+ 					description="MOD_DIGI_FAQ_USE_REVEAL_DESC">
+  					<option value="0">JNO</option>
+  					<option value="1">JYES</option>
 				</field>
 				
 			</fieldset>
