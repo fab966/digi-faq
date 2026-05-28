@@ -18,7 +18,7 @@ $containerClass = 'mod_digifaq_container ' . $moduleClassSfx;
             <?php foreach ($faqItems as $index => $item) : ?>
                 <?php if (!empty($item->question) && !empty($item->answer_long)) : ?>
                     <details class="digi-faq-item" id="faq-item-<?php echo $module->id . '-' . $index; ?>"<?php if($exclusive){echo ' name="accordeon"';};?>>
-                        <summary class="digi-faq-question">
+                        <summary class="digi-faq-question<?php if($reveal){echo ' reveal';};?>">
                             <?php echo htmlspecialchars($item->question); ?>
                         </summary>
                         <div class="digi-faq-answer">
