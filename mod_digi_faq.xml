@@ -2,12 +2,12 @@
 <extension type="module" version="6.0" client="site" method="upgrade">
     <name>Digitest FAQ</name>
     <author>Digitest.net</author>
-    <creationDate>Mag 2026</creationDate>
+    <creationDate>Sept 2026</creationDate>
     <copyright>Copyright (C) 2026-2030 Digitest.net. All Right reserved.</copyright>
     <license>GNU General Public License version 2 or newers.</license>
     <authorEmail>public2@digitest.net</authorEmail>
     <authorUrl>www.digitest.net</authorUrl>
-    <version>4.0.4</version>
+    <version>4.0.5</version>
     <description><![CDATA[MOD_DIGI_FAQ_DESCRIPTION]]></description>
     <namespace path="src">Digitest\Module\DigiFaq</namespace>
     <files>
