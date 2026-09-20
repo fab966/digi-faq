@@ -7,7 +7,7 @@
     <license>GNU General Public License version 2 or newers.</license>
     <authorEmail>public2@digitest.net</authorEmail>
     <authorUrl>www.digitest.net</authorUrl>
-    <version>4.0.5</version>
+    <version>4.0.6</version>
     <description><![CDATA[MOD_DIGI_FAQ_DESCRIPTION]]></description>
     <namespace path="src">Digitest\Module\DigiFaq</namespace>
     <files>
@@ -43,7 +43,7 @@
                     label="MOD_DIGI_FAQ_ELEMENTS"
                     description="MOD_DIGI_FAQ_ELEMENTS_DESC"
                     multiple="true"
-                    layout="joomla.form.field.subform.repeatable-table"
+                    layout="joomla.form.field.subform.repeatable"
                     min="1" max="12" groupByFieldset="false"
                     >
                     <form>
@@ -52,16 +52,14 @@
                             type="text"
                             label="MOD_DIGI_FAQ_QUESTION"
                             required="true"
-                            size="20"
                             filter="string"
                         />
                         <field
                             name="answer_long"
-                            type="textarea"
+                            type="editor"
                             label="MOD_DIGI_FAQ_ANSWER_LONG"
                             required="true"
-                            rows="3"
-                            cols="25"
+                            buttons="false"
                             filter="safehtml"
                         />
                         <field
@@ -69,8 +67,6 @@
                             type="textarea"
                             label="MOD_DIGI_FAQ_ANSWER_SHORT"
                             required="true"
-                            rows="3"
-                            cols="25"
                             filter="safehtml"
                         />
                         <field
