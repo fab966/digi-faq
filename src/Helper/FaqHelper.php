@@ -6,7 +6,7 @@
  * @subpackage 	Modules
  * @license    	GNU/GPL, see LICENSE.php
  * @author		Fabrizio Galuppi - Digitest
- * @version		4.0.5
+ * @version		4.0.6
  * @date		Sept 2026
  * @copyright   Copyright (C) 2026 - 2030 Fabrizio Galuppi - Digitest
  * @link       	https://www.digitest.net
@@ -58,11 +58,9 @@ class FaqHelper
             if (!empty($item->question) && !empty($item->answer_short)) {
                 $schema['mainEntity'][] = [
                     '@type' => 'Question',
-//                    'name'  => htmlspecialchars(strip_tags($item->question), ENT_QUOTES, 'UTF-8'),
 					'name'  => trim(strip_tags($item->question)),
                     'acceptedAnswer' => [
                         '@type' => 'Answer',
-//                        'text'  => nl2br(htmlspecialchars(strip_tags($item->answer_short), ENT_QUOTES, 'UTF-8'))
 						'text'  => trim(strip_tags($item->answer_short))
                     ]
                 ];

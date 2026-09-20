@@ -6,7 +6,7 @@
  * @subpackage 	Modules
  * @license    	GNU/GPL, see LICENSE.php
  * @author		Fabrizio Galuppi - Digitest
- * @version		4.0.5
+ * @version		4.0.6
  * @date		Sept 2026
  * @copyright   Copyright (C) 2026 - 2030 Fabrizio Galuppi - Digitest
  * @link       	https://www.digitest.net
