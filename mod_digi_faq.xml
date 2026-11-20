@@ -2,12 +2,12 @@
 <extension type="module" version="6.0" client="site" method="upgrade">
     <name>Digitest FAQ</name>
     <author>Digitest.net</author>
-    <creationDate>Sept 2026</creationDate>
+    <creationDate>Nov 2026</creationDate>
     <copyright>Copyright (C) 2026-2030 Digitest.net. All Right reserved.</copyright>
     <license>GNU General Public License version 2 or newers.</license>
     <authorEmail>public2@digitest.net</authorEmail>
     <authorUrl>www.digitest.net</authorUrl>
-    <version>4.0.6</version>
+    <version>4.0.7</version>
     <description><![CDATA[MOD_DIGI_FAQ_DESCRIPTION]]></description>
     <namespace path="src">Digitest\Module\DigiFaq</namespace>
     <files>
@@ -148,6 +148,19 @@
  					class="btn-group btn-group-yesno"
  					label="MOD_DIGI_FAQ_EXCLUSIVE"
  					description="MOD_DIGI_FAQ_USE_EXCLUSIVE_DESC">
+  					<option value="0">JNO</option>
+  					<option value="1">JYES</option>
+				</field>
+				
+				<field type="spacer" name="dividerrendjson" hr="true" />
+				
+				<field
+ 					name="render_json"
+ 					type="radio"
+ 					default="0"
+ 					class="btn-group btn-group-yesno"
+ 					label="MOD_DIGI_FAQ_RENDER_JSON"
+ 					description="MOD_DIGI_FAQ_RENDER_JSON_DESC">
   					<option value="0">JNO</option>
   					<option value="1">JYES</option>
 				</field>
